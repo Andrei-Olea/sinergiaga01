@@ -88,6 +88,15 @@
         .images figure{
             /* flex: 1 1 33%; */
             width: calc(33% - 1rem);
+            height: clamp(10rem, 20vw, 20rem);
+        }
+
+        .images figure img{
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: fill;
+            object-position: center center;
         }
 
         .images figure:nth-child(4){
