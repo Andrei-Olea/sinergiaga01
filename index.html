@@ -131,13 +131,20 @@
                 gap: 0;
             }
             li{
+                display: flex;
+                align-items: center;
             padding-inline: clamp(1rem, 6vw, 6rem);
             border-left: 1px solid #9a9a9a;
             padding-block: 0;
             }
             li:last-child{
-            border-right: 1px solid #9a9a9a;
-        }
+                border-right: 1px solid #9a9a9a;
+            }
+            li img{
+                width: 1.5em;
+                height: 1.5em;
+                margin-right: 0.5em;
+            }
         }
     </style>
 </head>
@@ -152,9 +159,9 @@
             <figure><img src="images/sinergia5.jpg" alt="Sinergia Gestión Agropecuaria"/></figure>
         </div>
         <ul>
-            <li>(+57) 311 208 3574</li>
-            <li><a href="mailto:info@sinergiaga.com">info@sinergiaga.com</a></li>
-            <li><a href="https://www.instagram.com/sinergia_ga/" target="_blank">@Sinergia_ga</a></li>
+            <li><img src="images/icon-phone.svg" />(+57) 311 208 3574</li>
+            <li><a href="mailto:info@sinergiaga.com"><img src="images/icon-email.svg" />info@sinergiaga.com</a></li>
+            <li><a href="https://www.instagram.com/sinergia_ga/" target="_blank"><img src="images/icon-instagram.svg" />@Sinergia_ga</a></li>
         </ul>
     </div>
 </body>
