@@ -79,10 +79,15 @@
 
         .images{
             display: flex;
+            width: 100%;
+            padding: clamp(1rem, 4vw, 4rem);
+            gap: 1rem;
+            overflow: hidden;
         }
 
         .images figure{
-            flex: 1 1 33%;
+            /* flex: 1 1 33%; */
+            width: calc(33% - 1rem);
         }
 
         .images figure:nth-child(4){
@@ -95,7 +100,14 @@
 
         @media screen and (min-width: 768px){
             .images figure{
-                flex: 1 1 20%;
+                /* flex: 1 1 20%; */
+                width: calc(20% - 1rem);
+            }
+            .images figure:nth-child(4){
+                display: block;
+            }
+            .images figure:nth-child(5){
+                display: block;
             }
             ul{
                 flex-direction: row;
