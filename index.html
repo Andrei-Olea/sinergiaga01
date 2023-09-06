@@ -89,13 +89,17 @@
             /* flex: 1 1 33%; */
             width: calc(33% - 1rem);
             height: clamp(10rem, 20vw, 20rem);
+            margin: 0;
+            position: relative;
         }
 
         .images figure img{
+            display: block;
             width: 100%;
-            height: auto;
+            height: 100%;
             display: block;
             object-fit: fill;
+            position: absolute;
             object-position: center center;
         }
 
