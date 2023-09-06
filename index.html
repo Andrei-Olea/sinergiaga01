@@ -5,7 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sinergia Gestión Agropecuaria</title>
     <style>
+        div, h1{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body{
+            margin: 0;
             background-color: #f2f2f2;
         }
         .wrapper{
@@ -33,11 +40,46 @@
             top: 0;
             left:0;
         }
+
+        ul{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: clamp(1rem, 2vw, 2rem);
+            background: white;
+            padding: 0.5em;
+        }
+        li{
+            list-style: none;
+            font-size: 1.5rem;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        a{
+            color: #000;
+        }
+        a:hover{
+            color: #02534C;
+            text-decoration: none;
+        }
+
+        @media screen and (min-width: 768px){
+            ul{
+                flex-direction: row;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="wrapper">
         <h1>Sinergia</h1>
+        <ul>
+            <li>(+57) 311 208 3574</li>
+            <li><a href="mailto:info@sinergiaga.com">info@sinergiaga.com</a></li>
+            <li><a href="https://www.instagram.com/sinergia_ga/" target="_blank">@Sinergia_ga</a></li>
+        </ul>
     </div>
 </body>
 </html>
