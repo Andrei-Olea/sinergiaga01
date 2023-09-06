@@ -77,7 +77,26 @@
             text-decoration: none;
         }
 
+        .images{
+            display: flex;
+        }
+
+        .images figure{
+            flex: 1 1 33%;
+        }
+
+        .images figure:nth-child(4){
+            display: none;
+        }
+
+        .images figure:nth-child(5){
+            display: none;
+        }
+
         @media screen and (min-width: 768px){
+            .images figure{
+                flex: 1 1 20%;
+            }
             ul{
                 flex-direction: row;
                 gap: 0;
@@ -95,6 +114,13 @@
 </head>
 <body>
     <div class="wrapper">
+        <div class="images">
+            <figure><img src="images/sinergia1.jpg" alt="Sinergia Gestión Agropecuaria"/></figure>
+            <figure><img src="images/sinergia2.jpg" alt="Sinergia Gestión Agropecuaria"/></figure>
+            <figure><img src="images/sinergia3.jpg" alt="Sinergia Gestión Agropecuaria"/></figure>
+            <figure><img src="images/sinergia4.jpg" alt="Sinergia Gestión Agropecuaria"/></figure>
+            <figure><img src="images/sinergia5.jpg" alt="Sinergia Gestión Agropecuaria"/></figure>
+        </div>
         <h1>Sinergia</h1>
         <ul>
             <li>(+57) 311 208 3574</li>
